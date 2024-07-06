@@ -41,13 +41,7 @@ modules:
           url-template: https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz
 
   - name: vnote
-    buildsystem: qmake
-    config-opts:
-      - PREFIX = ${FLATPAK_DEST}
-      - LIBS+=-L/app/lib
-    build-options:
-      env:
-        QMAKEPATH: /app/lib
+    buildsystem: cmake
     sources:
       - type: git
         url: https://github.com/vnotex/vnote.git
