@@ -45,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/vnotex/vnote.git
-        tag: v3.18.0
-        commit: 84cb60d8821469cf4cdccb19de6624d38f47e2ee
+        tag: v3.18.1
+        commit: 84d396f6c4ba20bd3fed02345b4bf7da07be79b8
       - type: file
         path: fun.vnote.app.VNote.metainfo.xml
     post-install:
